@@ -1,0 +1,12 @@
+[
+    {
+        "name":"Tana-meteo",
+        "site":"Openknowledge",
+        "url":"https://openknowledge.fao.org/server/api/core/bitstreams/c0607592-9b71-44ed-b5ae-456556bea1e7/content"
+    },
+    {
+        "name":"Demographie-Antananarivo",
+        "site":"Madarevues",
+        "url":"http://madarevues.recherches.gov.mg/IMG/pdf/article_sur_la_croissance_de_la_ville_d_antananarivo_1_.pdf"
+    }
+]
