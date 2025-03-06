@@ -1,10 +1,4 @@
 from unstructured.partition.pdf import partition_pdf
-from pathlib import Path
-import os
-from os.path import isfile, isdir
-import base64
-from PIL import Image
-from io import BytesIO
 
 class extractor:
     def __init__(self):
@@ -77,6 +71,14 @@ class extractor:
 
 
 if __name__ == "__main__":
+
+    from pathlib import Path
+    import os
+    from os.path import isfile, isdir
+    from PIL import Image
+    from io import BytesIO
+    import base64
+
     root = Path(__file__).resolve().parent.parent.parent
     files = [f"{root}/media/{file}" for file in os.listdir(f"{root}/media") if not isfile(file)]
 
