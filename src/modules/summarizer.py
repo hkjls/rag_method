@@ -47,6 +47,7 @@ class Summarizer:
     def tables_summaries(self, tables):
         tables_html = [table.metadata.text_as_html for table in tables]
         self._tables_summaries = self._summarize_chain.batch(tables_html, {"max_concurrency":3})
+    
 
 if __name__ == "__main__":
 
@@ -77,3 +78,4 @@ if __name__ == "__main__":
     data_file.tt = data_file.chunks
 
     sum.text_summaries = data_file.tt["texts"]
+    sum.text_summaries = data_file.tt["tables"]
